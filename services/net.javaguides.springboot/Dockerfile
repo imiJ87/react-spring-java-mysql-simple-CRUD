@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/net.javaguides.springboot-0.0.1-SNAPSHOT.jar net.javaguides.springboot-0.0.1-SNAPSHOT.jar
+ENTRYPOINT [ "java", "-jar", "/net.javaguides.springboot-0.0.1-SNAPSHOT.jar" ]
